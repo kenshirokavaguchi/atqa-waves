@@ -1,0 +1,29 @@
+{
+  "name": "atqa-waves",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "report:open": "allure serve output",
+    "report:remove": "rm -rf output/*",
+    "debug": "yarn codeceptjs run -c codecept.conf.js -o '{\"helpers\":{\"WebDriver\":{\"manualStart\":true}}}'\n",
+    "args:test": "yarn debug --browser ff",
+    "run:firefox": "yarn codeceptjs run -c codecept.conf.js -o '{\"helpers\":{\"WebDriver\":{\"desiredCapabilities\":{\"selenoidOptions\":{\"browserName\":\"firefox\",\"browserVersion\":\"101.0\"}}}}}'\n",
+    "run:chrome": "yarn codeceptjs run -c codecept.conf.js -o '{\"helpers\":{\"WebDriver\":{\"desiredCapabilities\":{\"selenoidOptions\":{\"browserName\":\"chrome\",\"browserVersion\":\"102\"}}}}}'\n",
+    "run:debug": "yarn codeceptjs run -c codecept.conf.bckp-5.js --debug --steps --verbose"
+  },
+  "dependencies": {
+    "@codeceptjs/helper": "^2.0.1",
+    "@types/fs-extra": "^9.0.13",
+    "@wdio/firefox-profile-service": "^7.20.3",
+    "@wdio/types": "^7.20.3",
+    "bluebird": "^3.7.2",
+    "codeceptjs": "^3.3.3",
+    "firefox-profile": "^4.2.2",
+    "fs-extra": "^10.1.0",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "webdriverio": "^6.12.1"
+  }
+}

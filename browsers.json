@@ -1,0 +1,35 @@
+{
+  "chrome": {
+    "default": "102.0",
+    "versions": {
+      "102.0": {
+        "image": "selenoid/vnc_chrome_wv:102.0",
+        "port": "4444",
+        "path": "/",
+        "volumes": ["/Users/a1/waves/atqa-waves/extension:/ext/tmp"]
+      }
+    }
+  },
+  "firefox": {
+    "default": "101.0",
+    "versions": {
+      "101.0": {
+        "image": "selenoid/vnc_firefox:101.0",
+        "port": "4444",
+        "path": "/wd/hub",
+        "volumes": ["/Users/a1/waves/atqa-waves/extension:/tmp"]
+      }
+    }
+  },
+  "opera": {
+    "default": "88.0",
+    "versions": {
+      "88.0": {
+        "image": "selenoid/vnc_opera:88.0",
+        "port": "4444",
+        "path": "/",
+        "volumes": ["/Users/a1/waves/atqa-waves/extension:/home/selenium"]
+      }
+    }
+  }
+}

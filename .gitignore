@@ -1,0 +1,33 @@
+# Xcode
+#
+xcuserdata/
+.DS_Store
+
+# IDEA
+#
+.idea/*
+!.idea/runConfigurations
+*.iml
+.log
+.env
+
+# node.js
+#
+node_modules/
+extension/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+#failed images
+output/*
+video/*
+logs/*
+
+e2e/report/*.json
+e2e/report/*.html
+e2e/report/*.png
+
+
+.jest/
